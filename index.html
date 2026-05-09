@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RBTRANSPORTEVIP — Transporte Ejecutivo VIP en Bogotá</title>
+  <meta name="description" content="Transporte ejecutivo VIP en Bogotá. Aeropuerto El Dorado, empresarial, turismo y pasajeros. Comodidad, puntualidad y seguridad garantizada. ¡Reserva ya por WhatsApp!">
+  <meta name="keywords" content="transporte ejecutivo Bogotá, transporte VIP Bogotá, transporte aeropuerto El Dorado, transporte empresarial Bogotá, transporte pasajeros Bogotá, servicio de transporte Bogotá">
+  <meta name="geo.region" content="CO-DC">
+  <meta name="geo.placename" content="Bogotá, Colombia">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rbtransportevip.github.io/">
+  <!-- Open Graph para redes sociales -->
+  <meta property="og:title" content="RBTRANSPORTEVIP — Transporte Ejecutivo VIP en Bogotá">
+  <meta property="og:description" content="Servicio de transporte ejecutivo VIP en Bogotá. Aeropuerto, empresarial y turismo. ¡Reserva ya!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rbtransportevip.github.io/">
+  <!-- Schema SEO local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "RBTRANSPORTEVIP",
+    "description": "Transporte ejecutivo VIP en Bogotá — aeropuerto, empresarial, turismo y pasajeros",
+    "url": "https://rbtransportevip.github.io",
+    "telephone": "+573023120784",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bogotá",
+      "addressRegion": "Cundinamarca",
+      "addressCountry": "CO"
+    },
+    "priceRange": "$$",
+    "serviceType": "Transporte ejecutivo de pasajeros"
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --negro: #0a0a0a;
+      --oro: #c9a84c;
+      --oro-claro: #e8c97a;
+      --gris: #1a1a1a;
+      --gris2: #2a2a2a;
+      --texto: #f0f0f0;
+      --texto2: #aaa;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--negro); color: var(--texto); line-height: 1.7; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; width: 100%; background: rgba(10,10,10,0.95); z-index: 100; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #222; }
+    .nav-logo { color: var(--oro); font-size: 18px; font-weight: 700; letter-spacing: 2px; text-decoration: none; }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: var(--texto2); text-decoration: none; font-size: 14px; transition: color .2s; }
+    .nav-links a:hover { color: var(--oro); }
+
+    /* HERO */
+    #inicio { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 120px 24px 80px; background: linear-gradient(160deg, #0a0a0a 60%, #1a1200 100%); position: relative; overflow: hidden; }
+    #inicio::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 40%, rgba(201,168,76,0.08) 0%, transparent 70%); }
+    .hero-badge { background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3); color: var(--oro); font-size: 12px; letter-spacing: 3px; padding: 6px 18px; border-radius: 20px; margin-bottom: 24px; text-transform: uppercase; }
+    h1 { font-size: clamp(2rem, 6vw, 4rem); font-weight: 800; line-height: 1.15; margin-bottom: 20px; }
+    h1 span { color: var(--oro); }
+    .hero-sub { font-size: clamp(1rem, 2.5vw, 1.25rem); color: var(--texto2); max-width: 600px; margin-bottom: 40px; }
+    .btn-primary { display: inline-block; background: var(--oro); color: #000; font-size: 16px; font-weight: 700; padding: 16px 36px; border-radius: 8px; text-decoration: none; transition: background .2s, transform .15s; }
+    .btn-primary:hover { background: var(--oro-claro); transform: translateY(-2px); }
+    .btn-secondary { display: inline-block; border: 1px solid var(--oro); color: var(--oro); font-size: 15px; font-weight: 600; padding: 14px 30px; border-radius: 8px; text-decoration: none; transition: background .2s; margin-left: 12px; }
+    .btn-secondary:hover { background: rgba(201,168,76,0.1); }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .hero-stats { display: flex; gap: 40px; margin-top: 60px; flex-wrap: wrap; justify-content: center; }
+    .stat { text-align: center; }
+    .stat-num { font-size: 2rem; font-weight: 800; color: var(--oro); }
+    .stat-lbl { font-size: 13px; color: var(--texto2); }
+
+    /* SECCIONES */
+    section { padding: 80px 24px; max-width: 1100px; margin: 0 auto; }
+    .sec-title { text-align: center; margin-bottom: 12px; }
+    .sec-title h2 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 700; }
+    .sec-title h2 span { color: var(--oro); }
+    .sec-sub { text-align: center; color: var(--texto2); margin-bottom: 48px; font-size: 15px; }
+
+    /* SERVICIOS */
+    #servicios { background: var(--gris); border-radius: 0; }
+    #servicios > * { max-width: 1100px; margin: 0 auto; }
+    #servicios { padding: 80px 24px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .card { background: var(--gris2); border: 1px solid #333; border-radius: 12px; padding: 28px 24px; transition: border-color .2s, transform .2s; }
+    .card:hover { border-color: var(--oro); transform: translateY(-4px); }
+    .card-icon { font-size: 2.4rem; margin-bottom: 16px; }
+    .card h3 { font-size: 17px; font-weight: 700; color: var(--oro); margin-bottom: 10px; }
+    .card p { font-size: 14px; color: var(--texto2); line-height: 1.6; }
+
+    /* POR QUÉ */
+    .ventajas { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+    .ventaja { display: flex; gap: 14px; align-items: flex-start; }
+    .ventaja-icon { width: 42px; height: 42px; border-radius: 8px; background: rgba(201,168,76,0.12); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+    .ventaja h4 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+    .ventaja p { font-size: 13px; color: var(--texto2); }
+
+    /* CTA FINAL */
+    #contacto { background: linear-gradient(135deg, #1a1000, #0a0a0a); text-align: center; padding: 80px 24px; }
+    #contacto h2 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; margin-bottom: 16px; }
+    #contacto p { color: var(--texto2); margin-bottom: 36px; font-size: 16px; }
+    .wa-btn { display: inline-flex; align-items: center; gap: 12px; background: #25D366; color: #fff; font-size: 18px; font-weight: 700; padding: 18px 40px; border-radius: 10px; text-decoration: none; transition: background .2s, transform .15s; }
+    .wa-btn:hover { background: #1ebe5d; transform: translateY(-2px); }
+
+    /* FOOTER */
+    footer { background: #060606; text-align: center; padding: 24px; font-size: 13px; color: #555; border-top: 1px solid #1a1a1a; }
+    footer a { color: var(--oro); text-decoration: none; }
+
+    /* WHATSAPP FLOTANTE */
+    .wa-float { position: fixed; bottom: 24px; right: 24px; background: #25D366; color: #fff; border-radius: 50px; padding: 14px 22px; font-size: 15px; font-weight: 700; text-decoration: none; z-index: 999; box-shadow: 0 4px 20px rgba(37,211,102,0.35); display: flex; align-items: center; gap: 8px; transition: transform .2s; }
+    .wa-float:hover { transform: scale(1.05); }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      .btn-secondary { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#inicio" class="nav-logo">RB TRANSPORT VIP</a>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio">
+    <div class="hero-badge">Transporte ejecutivo de élite — Bogotá</div>
+    <h1>Tu viaje merece<br><span>comodidad VIP</span></h1>
+    <p class="hero-sub">Transporte ejecutivo en Bogotá con puntualidad garantizada. Aeropuerto El Dorado, empresarial, turismo y servicio de pasajeros.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/573023120784?text=Hola,%20quiero%20reservar%20un%20servicio%20VIP" class="btn-primary">Reservar ahora 🚗</a>
+      <a href="#servicios" class="btn-secondary">Ver servicios</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">VIP</div><div class="stat-lbl">Experiencia de élite</div></div>
+      <div class="stat"><div class="stat-num">24/7</div><div class="stat-lbl">Disponibilidad</div></div>
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl">Puntualidad</div></div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" style="background:var(--gris);">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="sec-title"><h2>Nuestros <span>servicios</span></h2></div>
+      <p class="sec-sub">Soluciones de transporte para cada necesidad en Bogotá y alrededores</p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">✈️</div>
+          <h3>Aeropuerto El Dorado</h3>
+          <p>Recogida y entrega en el aeropuerto internacional El Dorado. Seguimiento de vuelo y tiempo de espera sin costo adicional.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">👔</div>
+          <h3>Transporte empresarial</h3>
+          <p>Servicio para ejecutivos y empresas en Bogotá. Comodidad, discreción y puntualidad para tus reuniones de negocios.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏔️</div>
+          <h3>Turismo y excursiones</h3>
+          <p>Recorre Bogotá y sus alrededores con comodidad. Monserrate, Zipaquirá, Villa de Leyva y más destinos.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎉</div>
+          <h3>Eventos especiales</h3>
+          <p>Bodas, grados, cumpleaños y eventos corporativos. Transporte elegante para tus momentos más importantes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ ELEGIRNOS -->
+  <section id="nosotros">
+    <div class="sec-title"><h2>¿Por qué elegir <span>RBTRANSPORTEVIP?</span></h2></div>
+    <p class="sec-sub">Más que un servicio de transporte — una experiencia de élite</p>
+    <div class="ventajas">
+      <div class="ventaja">
+        <div class="ventaja-icon">⏱️</div>
+        <div><h4>Puntualidad garantizada</h4><p>Llegamos antes de la hora acordada, siempre.</p></div>
+      </div>
+      <div class="ventaja">
+        <div class="ventaja-icon">🛡️</div>
+        <div><h4>Seguridad y confianza</h4><p>Conductores verificados y vehículos en perfecto estado.</p></div>
+      </div>
+      <div class="ventaja">
+        <div class="ventaja-icon">💎</div>
+        <div><h4>Vehículos de élite</h4><p>Flota ejecutiva limpia, cómoda y climatizada.</p></div>
+      </div>
+      <div class="ventaja">
+        <div class="ventaja-icon">📱</div>
+        <div><h4>Reserva por WhatsApp</h4><p>Respuesta inmediata y confirmación en minutos.</p></div>
+      </div>
+      <div class="ventaja">
+        <div class="ventaja-icon">🗺️</div>
+        <div><h4>Bogotá y alrededores</h4><p>Cubrimos toda la ciudad y los municipios cercanos.</p></div>
+      </div>
+      <div class="ventaja">
+        <div class="ventaja-icon">🌙</div>
+        <div><h4>Servicio 24/7</h4><p>Disponibles a cualquier hora del día o la noche.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA CONTACTO -->
+  <section id="contacto" style="max-width:100%; background:linear-gradient(135deg,#1a1000,#0a0a0a); text-align:center; padding:80px 24px;">
+    <h2 style="font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin-bottom:16px;">¿Listo para viajar <span style="color:var(--oro)">en clase VIP?</span></h2>
+    <p style="color:var(--texto2);margin-bottom:36px;font-size:16px;max-width:500px;margin-inline:auto;">Escríbenos ahora por WhatsApp y te respondemos en minutos. Sin complicaciones, sin esperas.</p>
+    <a href="https://wa.me/573023120784?text=Hola,%20quiero%20reservar%20un%20servicio%20de%20transporte%20VIP%20en%20Bogotá" class="wa-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.531 5.849L.057 23.885a.5.5 0 0 0 .619.61l6.162-1.617A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.894 9.894 0 0 1-5.031-1.372l-.361-.214-3.741.981.998-3.648-.235-.374A9.867 9.867 0 0 1 2.106 12C2.106 6.58 6.58 2.106 12 2.106S21.894 6.58 21.894 12 17.42 21.894 12 21.894z"/></svg>
+      Reservar por WhatsApp
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2016 - 2025 <a href="#inicio">RBTRANSPORTEVIP</a> — Transporte Ejecutivo de Élite en Bogotá, Colombia</p>
+    <p style="margin-top:6px;">Bogotá, Cundinamarca · Servicio 24/7 · Aeropuerto · Empresarial · Turismo</p>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/573023120784?text=Hola,%20quiero%20información%20sobre%20el%20servicio%20VIP" class="wa-float">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.531 5.849L.057 23.885a.5.5 0 0 0 .619.61l6.162-1.617A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.894 9.894 0 0 1-5.031-1.372l-.361-.214-3.741.981.998-3.648-.235-.374A9.867 9.867 0 0 1 2.106 12C2.106 6.58 6.58 2.106 12 2.106S21.894 6.58 21.894 12 17.42 21.894 12 21.894z"/></svg>
+    Escríbenos
+  </a>
+
+</body>
+</html>
